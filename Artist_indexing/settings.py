@@ -79,11 +79,31 @@ WSGI_APPLICATION = 'Artist_indexing.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+        'ENGINE': 'django.db.backends.postgresql',
+
+        'NAME': 'd2hilked5orfeq',
+
+        'USER': 'fjeikdxbaxgcqh',
+
+        'PASSWORD': '0a0c9e144c633742d49cf1fa5665512670a2149b93a4cbbc9d1a7dacd1beabcf',
+
+        'HOST': 'ec2-3-216-221-31.compute-1.amazonaws.com',
+
+        'PORT': '5432',
+
     }
+
 }
 
 
@@ -111,14 +131,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+# TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
-
+USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
