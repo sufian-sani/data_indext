@@ -28,7 +28,7 @@ SECRET_KEY = 'k+5ags+ac5s9+tmtuuir21y3x=b8ali15$thnqhd6$cewsnut$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['musicianindex.herokuapp.com', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['musicianindex.herokuapp.com']
 
 
 # Application definition
